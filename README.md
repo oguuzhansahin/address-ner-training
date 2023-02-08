@@ -16,6 +16,6 @@ virtualenv venv && source venv/bin/activate && pip install -r requirements.txt
 
 # Edit ./run_ner.sh for other configurations before running
 
-chmod +x run_$TASK_NAME.sh # Make the file executable if it's not already
-./run_$TASK_NAME.sh # Run
+chmod +x run_ner.sh # Make the file executable if it's not already
+./run_ner.sh # Run
 ```
