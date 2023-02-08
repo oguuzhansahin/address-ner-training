@@ -1,0 +1,14 @@
+python train.py \
+        --model_name_or_path 'dbmdz/bert-base-turkish-cased' \
+        --dataset_name 'deprem_dataset' \
+        --do_train \
+        --do_predict \
+        --learning_rate 2e-5 \
+        --per_device_train_batch_size 16 \
+        --per_device_eval_batch_size 32 \
+        --num_train_epoch 5 \
+        --weight_decay 0.01 \
+        --evaluation_strategy 'epoch' \
+        --save_strategy 'epoch' \
+        --load_best_model_at_end True \
+        --output_dir 'deneme_script'
