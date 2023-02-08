@@ -32,7 +32,7 @@ def fix_labels_error(json_data: Dict
                 continue
 
         labels = biluo_to_iob(labels)
-        #labels = [label2id(label) for label in labels]
+        labels = [label2id(label) for label in labels]
 
         assert len(labels) == len(tokens)
 
